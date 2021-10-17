@@ -1,0 +1,551 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "roboto";
+}
+/* class Auxiliares */
+.container{padding: 0 2%;margin: 0 auto;max-width: 960px;}
+.clear{clear: both;}
+@font-face{
+    font-family: "roboto";
+    src: url('../Fonts/Roboto-Light.ttf');
+}
+/* site */
+section.header-master{
+    width: 100%;
+    min-height: 700px;
+    background-image: url('../Img/gradient.jfif');
+   background-size: cover;
+    padding: 30px 0;
+}
+section.header-master header{
+    border-bottom: 2px solid rgb(51, 26, 26);
+    padding-bottom: 10px;
+}
+.mobile >h3{
+    display: none;
+    float: right;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+nav.mobile{
+    
+   position: relative;
+   top: 10px ;
+   float: right;
+   margin-right: 10px;
+   
+}
+ ul.nav-desktop{
+     position: absolute;
+     top: 75px;
+     left: 0;
+     width: 100%;
+    list-style-type: none;
+    display: none;
+    background-color: peru;
+}
+
+ul.nav-desktop li{
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-bottom: 2px solid white;
+
+}
+.nav-desktop a{
+    text-decoration: none;
+    color: black;
+}
+div.logo{
+    background-image: url('../Img/logo.png');
+    float: left;
+    width: 64px;
+    height: 64px;
+    background-size: contain;
+
+}
+nav.desktop li.troca{
+    color: rgb(124, 22, 4) !important;
+    font-weight: 600;
+    position: relative;
+}
+nav.desktop li.troca span{
+    position: absolute;
+    bottom: 0;
+    background: black;
+    height: 3px;
+    width: 10px;
+}
+
+nav.desktop{
+    float: left;
+    list-style-type: none;
+    padding-left:  60px;
+}
+nav.desktop li{
+    display: inline-block;
+    padding: 0 15px ;
+}
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.telefone{
+    float: left; 
+}
+.telefone span{
+    color: white;
+    padding-left: 10px;
+    font-size: 20px;
+}
+.content-header{
+    padding: 60px 0;
+}
+.content-header .one{
+    width: 50%;
+    float: left;
+    
+}
+.content-header .two{
+    width: 50%;
+    float: left;
+   
+}
+.content-header .two img{
+     border-radius: 50%;
+    margin: 5px 15px;
+}
+.content-header .one h2{
+    font-size: 30px;
+    padding: 20px 0;
+    color: blanchedalmond;
+
+}
+.content-header .one p{
+    font-size: 15px;
+    padding: 10px 0;
+}
+.one h2 > b{
+    color: rgb(24, 41, 41);
+    font-weight: 500;
+}
+.content-header .one > span{
+    font-size: 12px;
+    padding: 20px 0 ;
+    color: rgb(39, 172, 248);
+}
+.one form input[type=email]{
+    border-radius: 20px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    margin: 20px 0;
+}
+form{
+    padding: 20px 0;
+    
+}
+.one form input[type=submit]{
+    border: 0;
+    border-radius: 20px;
+    padding: 20px 0;
+    width: 220px;
+    cursor: pointer;
+    background-color: chartreuse;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+/* diferenciais */
+
+section.diferenciais{
+    padding: 40px 0;
+    
+}
+section.diferenciais > .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .diferenciais-single{
+    width: 33.3%;
+    padding: 20px;
+}
+.diferenciais-single h2{
+    color: rgb(54, 32, 32);
+    font-size: 28px;
+    padding: 10px 0;
+}
+.diferenciais-single span{
+    color: aqua;
+    font-size: 30px;
+}
+.diferenciais-single p{
+    font-size: 15px;
+}
+.diferenciais-single b{
+    color: rgb(27, 46, 19);
+    font-weight: 800;
+    font-size: 32px;
+}
+
+/* sobre */
+.sobre > .container{
+    max-width: 1400px;
+}
+.sobre{
+    background-color: burlywood;
+    padding: 20px;
+}
+.sobre-1 {
+    width: 400px;
+    height: 450px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../Img/smartphone.png');
+    background-position: center;
+    
+}
+.sobre-1{
+    float: left;
+    width: 50%;
+}
+.sobre-2{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.sobre-2 h2{
+    font-size: 27px;
+    padding: 20px 0;
+
+    
+}
+.sobre-2 p{
+    font-size: 15px;
+    color: white;
+}
+.sobre-2 h2 b{
+    font-size: 32px;
+    color: green;
+}
+/* depoimentos */
+
+section.depoimentos{
+    background-image: url('../Img/wallpaperbg.png');
+    background-size: cover;
+
+    padding: 100px 0;
+
+}
+section.depoimentos p{
+    text-align: center;
+}
+section.depoimentos span{
+    color: red;
+   
+    text-align: center;
+}
+section.depoimentos h1{
+    text-align: center;
+    text-transform: capitalize;
+}
+/* etapas */
+section.etapas > .container{
+    max-width: 1200px;
+}
+section.etapas b{
+    color: chartreuse;
+    font-size: 30px;
+
+}
+section.etapas{
+    padding: 40px 0;
+}
+section.etapas h2{
+    text-align: center;
+}
+section.etapas .etapa__single{
+    float: left;
+    width: 50%;
+    padding: 0 20px ;
+    margin-top: 30px;
+}
+.etapa__group img{
+    float: left;
+
+    border-radius: 125px;
+}
+.etapa__group p{
+    float: right;
+    text-transform: capitalize;
+    color: rgb(28, 52, 53);
+    padding: 20px 10px;
+    text-align: center;
+   
+   
+    margin-top: 40px;
+}
+.etapa__group2{
+    margin-bottom: 40px;
+}
+.etapa__group2 .circle{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid black;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+}
+.circle span{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.etapa__descricao h3{
+    color: chartreuse;
+    padding: 10px 0;
+}
+.etapa__descricao p{
+    font-size: 15px;
+    padding-left: 20px;
+}
+.line{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%,0);
+    z-index: 999;
+    background-color: rgb(27, 23, 21);
+    height: 40px;
+    width: 1px;
+}
+/* diferencas */
+section.diferencas > .container{
+    text-align: center;
+    max-width: 700px;
+}
+section.diferencas{
+    padding: 40px 0;
+}
+.diferencas__single{
+    float: left;
+    width: 50%;
+   
+}
+section.diferencas> .container > h2{
+    margin-bottom: 40px;
+}
+section.diferencas> .container > h2 b:nth-last-of-type(2){
+    color: green;
+}
+section.diferencas> .container > h2 b:nth-last-of-type(1){
+    color: cornflowerblue;
+}
+.diferencas__single h2,
+.item-diferencas1 span{
+    color: rgb(155, 148, 148);
+}
+.line-difereca-1{
+    height: 2px;
+    width: 100px;
+    transform: rotate(-7deg);
+    position: relative;
+    top: 12px;
+    left: 110px;
+    z-index: 1;
+    background-color: crimson;
+}
+.item-diferencas2{
+    color: darkgoldenrod;
+    padding: 3px 0;
+}
+section.diferencas bom{
+    color: darkgreen;
+    font-size: 30px;
+}
+.diferencas__single:nth-of-type(1){
+    border-right: 1px solid black;
+}
+/* contato */
+section.contato{
+    padding: 20px;
+    background-color: rgb(78, 211, 78);
+    text-align: center;
+    border-top: 3px dotted orangered;
+    border-bottom: 3px solid orange;
+}
+section.contato > .container{max-width: 800px;}
+input[type=text],input[type=email]{
+    width: 100%;
+    padding: 20px 10px;
+    outline: none;
+    border: 0;
+    border-radius: 20px;
+}
+.form__grounp{
+    margin-bottom: 20px;
+}
+.contato textarea{
+    width: 100%;
+    resize: none;
+    padding: 20px;
+    height: 150px;
+    outline: none;
+
+}
+input[type=submit]{
+    width: 150px;
+    height:40px;
+    border: 0;
+    border-bottom: 3px solid red;
+    color: white;
+    background-color: rgb(124, 22, 4);
+    cursor: pointer;
+    border-right: 2px solid red;
+}
+input[type=submit]:hover{
+    background-color: rgb(70, 19, 10);
+}
+section.contato h2{
+    padding-bottom: 20px;
+    color: rgb(235, 230, 230);
+}
+section.contato p{
+    color: rgb(24, 41, 41);
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+section.contato span{
+    text-decoration: underline;
+    color: rgb(39, 69, 85);
+}
+input[type=text]:focus,input[type=email]:focus{
+    background-color: seagreen;
+    color: white;
+}
+/* footer */
+footer >.container{
+    max-width: 1440px;
+}
+footer{
+    padding: 20px 0;
+    background: rgb(87, 250, 87);
+}
+.sessao__single{
+    width: 50%;
+    float: left;
+}
+.sessao__single h2{
+    padding: 10px 0;
+}
+.sessao__doble{
+    width: 25%;
+    float: left;
+}
+.sessao__doble li{
+    list-style-type: none;
+    padding-left: 20px;
+}
+.sessao__doble a:hover{
+    background-color: rgb(111, 212, 80);
+}
+.sessao__doble h2{
+    padding: 10px 0;
+}
+.sessao__doble a{
+    text-decoration: none;
+    color: rgb(41, 26, 26);
+    
+}
+.sessao__alowny{
+    background-color: rgb(112, 240, 140);
+    width: 100%;
+    text-align: center;
+    padding: 10px 2%;
+}
+@media screen and (max-width: 1024px){
+  section.etapas .etapa__single{
+      width: 100%;
+      float: none;
+
+  }
+    .etapa__group{
+        display: none;
+    }
+   
+}
+@media screen and (max-width: 900px){
+    .content-header .two{
+        display: none;
+    }
+    .telefone{
+        display: none;
+    }
+    .desktop{
+        display: none;
+    }
+    .content-header .one{
+        text-align: center;
+        width: 100%;
+    }
+    section.header-master{
+        min-height: 200px;
+    }
+    
+   
+    nav.mobile h3{
+        display: block;
+    }
+}
+@media screen and (max-width: 768px){
+    .diferenciais-single{
+        width: calc(100% / 2);
+    }
+    .sobre-1{
+        display: none;
+    }
+    .sobre-2{
+        width: 100%;
+    }
+    .diferencas__single{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .diferencas__single:nth-of-type(1){
+        border-right: none;
+        border-bottom: 1px solid black;
+    }
+    .line-difereca-1{
+        height: 2px;
+        width: 100px;
+        transform: rotate(-7deg);
+        position: relative;
+        top: 12px;
+        left: 277px;
+        z-index: 1;
+        background-color: crimson;
+    }
+    .sessao__single{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .sessao__doble{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 500px){
+    .diferenciais-single{
+        width: 100%;
+    }
+    .sessao__doble{
+        width: 100%;
+    }
+}
